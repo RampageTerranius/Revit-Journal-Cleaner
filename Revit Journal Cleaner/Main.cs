@@ -34,8 +34,11 @@ namespace Revit_Journal_Cleaner
             //get the local app data location
             string localPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
 
-            //get a list of all files inside of the journals folder
-            string[] fileList = Directory.GetFiles(localPath + "\\Autodesk\\Revit\\Autodesk Revit 2019\\Journals");
+            //check what version we are currnetly running and prepare to wipe journals for that version
+            string revitVersion = commandData.Application.Application.VersionName;
+
+            //get a list of all files inside of the journals folder of the current version of revit
+            string[] fileList = Directory.GetFiles(localPath + "\\Autodesk\\Revit\\" + commandData.Application.Application.VersionName + "\\Journals");
 
             try
             {
