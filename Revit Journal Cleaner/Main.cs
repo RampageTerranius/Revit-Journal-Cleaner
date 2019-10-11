@@ -22,7 +22,7 @@ namespace Revit_Journal_Cleaner
 
             // Ask user to confirm they want to delete journals.
             TaskDialog dialogBox = new TaskDialog("WARNING!");
-            dialogBox.MainContent = "WARNING! this will delete all .rvt files in your local application data folder\n" +
+            dialogBox.MainContent = "WARNING! this will delete all .rvt files in your local revit journal folder.\n" +
                                     "Are you sure you wish to proceed?";
             dialogBox.CommonButtons = TaskDialogCommonButtons.Yes | TaskDialogCommonButtons.No;
 
