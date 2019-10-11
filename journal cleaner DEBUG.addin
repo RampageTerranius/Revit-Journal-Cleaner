@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>journal cleaner DEBUG</Text>
+    <Description>DEBUG</Description>
+    <Assembly>X:\REVIT ADDINS\REVIT 2019 ADDINS\Source Code\Revit Journal Cleaner\Revit Journal Cleaner\bin\Debug\Revit Journal Cleaner.dll</Assembly>
+    <FullClassName>Revit_Journal_Cleaner.Main</FullClassName>
+    <ClientId>e85b0ae5-27fd-49d2-9577-7a72c7f01128</ClientId>
+       <VendorId>Tyler Brown</VendorId>
+       <VendorDescription>Tyler Brown</VendorDescription>
+  </AddIn>
+</RevitAddIns>
